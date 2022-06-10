@@ -5,6 +5,7 @@ import base64
 from tkinter import *
 from colorama import Fore
 
+
 # Setting up colours
 
 RED = Fore.RED
