@@ -2,7 +2,7 @@
   _PR0M3TH3US_
  </h1>
  
-![compatible](https://img.shields.io/badge/Windows%2C%20Mac%20%26%20Linux-compatible-brightgreen "Platform")
+<img alt = "Compatible" src="https://img.shields.io/badge/Windows%20%26%20Linux-Compatible-brightgreen"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/c0ncatenate/python-ransomware"> <img alt="GitHub" src="https://img.shields.io/github/license/c0ncatenate/python-ransomware">
 
 
 ***DO NOT RUN THE CONTENTS OF THIS REPO WITHOUT KNOWING WHAT IT DOES!***
