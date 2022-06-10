@@ -10,4 +10,26 @@
 
 The code in this repository is for a ransomware. It is a malware and must not be run unknowingly. Your data could get encrypted and/or lost forever.
   
-  I created this ransomware on python out of boredom and made it my personal project. I update it occasionally and add new features or patch bugs. Stay tuned and watch the repo to keep track!
+  I created this ransomware on python out of boredom and made it my personal project. It encrypts the files in the directory where the scripts are located and adds the ".pr0m3th3us" extension to them. You can clone this repository onto your computer using:
+    
+    git clone https://github.com/c0ncatenate/prometheus-ransomware
+  
+# Usage
+## To encrypt files
+
+1.  Open a Linux/Windows terminal in the directory where you cloned this repository.
+2.  Run encrypt.py
+    
+    `python3 encrypt.py`
+    
+ 
+ You should see that the test files in the directory get encrypted and their extensions also change.
+ 
+ ## To decrypt files
+ 
+ 1.  Open a Linux/Windows terminal in the directory where you cloned this repository.
+ 2.  Run decrypt.py
+      
+      `python3 decrypt.py`
+ 
+ 3.  Enter "hacking" as the secret phrase.
