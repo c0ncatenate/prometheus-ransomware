@@ -33,3 +33,6 @@ The code in this repository is for a ransomware. It is a malware and must not be
       `python3 decrypt.py`
  
  3.  Enter "hacking" as the secret phrase.
+
+# Disclaimer
+I am not responsible for any damage you might cause with this tool. Use it at own risk for testing and learning purposes only! I made this for the sole reason of learning encryption and decryption in python. Please use this in a controlled testing lab environment such as a virtual machine and do not run on your host machine. I am not responsible for any data loss you might suffer due to this tool.
