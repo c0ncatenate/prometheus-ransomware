@@ -19,13 +19,13 @@ The code in this repository is for a ransomware. It is a malware and must not be
 
 1.  Open a Linux/Windows terminal in the directory where you cloned this repository.
 2.  Run encrypt.py
-
-**DO NOT RUN THE ENCRYPT FILE TWICE IN A ROW AS IT WILL DOUBLE ENCRYPT THE FILES AND OVERWRITE THE KEY FILE FOR THE FIRST ENCRYPTION, MAKING IT IMPOSSIBLE TO DECRYPT IT THE SECOND TIME.**
     
     `python3 encrypt.py`
     
  
  You should see that the test files in the directory get encrypted and their extensions also change.
+ 
+ **DO NOT RUN THE ENCRYPT FILE TWICE IN A ROW AS IT WILL DOUBLE ENCRYPT THE FILES AND OVERWRITE THE KEY FILE FOR THE FIRST ENCRYPTION, MAKING IT IMPOSSIBLE TO DECRYPT IT THE SECOND TIME.**
  
  ## To decrypt files
  
