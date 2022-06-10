@@ -4,6 +4,7 @@ import ftplib
 import base64
 
 
+
 # let's find some files and encrypt them
 
 def encrypt():
