@@ -4,9 +4,9 @@ import ftplib
 import os
 import colorama
 
-HOSTNAME = '100.90.95.6'
-USERNAME = 'concatenate'
-PASSWORD = 'arshseri123'
+HOSTNAME = '<hostname>'
+USERNAME = '<username>'
+PASSWORD = '<password>'
 
 # Connect to the FTP server
 ftp_server = ftplib.FTP(HOSTNAME, USERNAME, PASSWORD)
