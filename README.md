@@ -2,7 +2,7 @@
   _PR0M3TH3US RANSOMWARE_
  </h1>
  
-<img alt="GitHub" src="https://img.shields.io/github/license/c0ncatenate/prometheus-ransomware?label=license"> <img alt = "Compatible" src="https://img.shields.io/badge/Windows%20%26%20Linux-Compatible-brightgreen">
+<img alt = "Compatible" src="https://img.shields.io/badge/Windows%20%26%20Linux-Compatible-brightgreen">
 
 
 ### ***DO NOT RUN THE CONTENTS OF THIS REPO WITHOUT KNOWING WHAT IT DOES! BY RUNNING THE CODE IN THIS REPOSITORY, YOU CLAIM FULL RESPONSIBILITY FOR ANY DATA LOSS YOU MIGHT SUFFER !!**
