@@ -38,10 +38,11 @@ The code in this repository is for a ransomware. It is a malware and must not be
 
 
 # TODO
-1.  Conserve file extensions during encryption and return them after decryption.
-2.  Provide a more detailed GUI.
-3.  Create a local copy of the key file somewhere other than the FTP server.
-    
+-  ~~Conserve file extensions during encryption and return them after decryption.~~ ✔️
+-  Create a more detailed GUI.
+-  Create a local copy of the key file somewhere other than the FTP server.
+-  Remove FTP functionality as it is difficult to configure OR create a better help section to configure the FTP.
+  
     ...
 
 # Disclaimer
