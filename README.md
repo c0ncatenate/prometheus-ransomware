@@ -2,7 +2,7 @@
   _PR0M3TH3US RANSOMWARE_
  </h1>
  
-<img alt="GitHub" src="https://img.shields.io/github/license/c0ncatenate/python-ransomware?label=license"> <img alt = "Compatible" src="https://img.shields.io/badge/Windows%20%26%20Linux-Compatible-brightgreen"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/c0ncatenate/python-ransomware"> <a href="https://instagram.com/xaash_" target="_blank"> <img alt="Instagram Follow" src="https://img.shields.io/badge/Instagram-xaash__-red?style=flat&logo=instagram&logoColor=white"></a>
+<img alt="GitHub" src="https://img.shields.io/github/license/c0ncatenate/python-ransomware?label=license"> <img alt = "Compatible" src="https://img.shields.io/badge/Windows%20%26%20Linux-Compatible-brightgreen"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/c0ncatenate/python-ransomware">
 
 
 ### ***DO NOT RUN THE CONTENTS OF THIS REPO WITHOUT KNOWING WHAT IT DOES! BY RUNNING THE CODE IN THIS REPOSITORY, YOU CLAIM FULL RESPONSIBILITY FOR ANY DATA LOSS YOU MIGHT SUFFER !!**
