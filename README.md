@@ -42,6 +42,7 @@ The code in this repository is for a ransomware. It is a malware and must not be
 -  Create a more detailed GUI.
 -  Create a local copy of the key file somewhere other than the FTP server.
 -  Remove FTP functionality as it is difficult to configure OR create a better help section to configure the FTP.
+-  Create a multi-encrypt/multi-decrypt feature with a multi-key management system.
   
     ...
 
